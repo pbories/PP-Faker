@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>
-        Fake profile pic generator by d4abuG
+        Fake profile pic generator
     </title>
     <style>
         .loading {

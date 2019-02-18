@@ -2,21 +2,22 @@ window.addEventListener('load', () => {
 
     const imgElt = document.getElementById('image');
     const saveElt = document.getElementById('save');
+    const nextElt = document.getElementById('next');
 
     createNewImg();
 
-    document.getElementById('next').onclick = () => {
-        window.location.reload();
-    };
-
     saveElt.setAttribute("href", "fake.jpg");
     saveElt.setAttribute("download", "fake.jpg");
+
+    nextElt.onclick = () => {
+        imgElt.innerHTML = '';
+        createNewImg();
+    };
 
     function createNewImg() {
         getRequest(
             'faker.php',
             (response) => {
-                imgElt.innerHTML = '';
                 imgElt.innerHTML = response;
             },
             () => {
