@@ -1,5 +1,5 @@
 # PP-Faker
-Get AI generated fake profile pictures
+Mobile friendly single page application to get "profile pictures" of persons who don't exist.
 
 Based on www.thispersondoesnotexist.com, PP-Faker allows you to generate and save as many portraits of fake people as you want.
 
